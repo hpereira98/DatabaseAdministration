@@ -14,7 +14,6 @@ begin
     from dual;
 end status_id_trigger;
 
-
 -- DATABASE_ID
 create or replace trigger data_base_id_trigger
 before insert on data_base
@@ -24,7 +23,6 @@ begin
     into :new.id_database
     from dual;
 end data_base_id_trigger;
-
 
 -- DATAFILE_ID
 create or replace trigger data_file_id_trigger
@@ -46,10 +44,9 @@ begin
     from dual;
 end user_id_trigger;
 
-
 -- TABLESPACE
 create or replace trigger tablespace_id_trigger
-before insert on table_space
+before insert on tablespace_bd
 for each row
 begin
     select tablespace_id.nextval

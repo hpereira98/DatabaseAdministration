@@ -1,4 +1,7 @@
+import time
+
 import cx_Oracle
+import schedule as schedule
 
 USERNAME = 'grupoth'
 PASSWORD = "grupoth"
@@ -225,6 +228,14 @@ def initial_load():
     datafiles()
 
 
+def test():
+    print("I'm a test!")
+
+
 if __name__ == '__main__':
-    establishing_connection()
-    initial_load()
+    #establishing_connection()
+    #initial_load()
+    schedule.every(10).seconds.do(test)
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
