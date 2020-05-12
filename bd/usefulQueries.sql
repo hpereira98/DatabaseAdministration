@@ -1,15 +1,14 @@
-delete from data_base where id_database = 2;
-delete from status where id_status = 1;
-
-
-drop table status;
-drop table data_file;
+drop table memory_db;
+drop table datafile_db;
 drop table user_db;
-drop table tablespace_bd;
-drop table data_base;
+drop table tablespace_db;
+drop table database_db;
 
-drop sequence status_id;
+drop sequence memory_id;
 drop sequence database_id;
 drop sequence datafile_id;
 drop sequence user_id;
 drop sequence tablespace_id;
+
+
+ 
