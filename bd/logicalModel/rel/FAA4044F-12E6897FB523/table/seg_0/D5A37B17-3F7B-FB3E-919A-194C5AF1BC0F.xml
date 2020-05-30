@@ -1,0 +1,187 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5A37B17-3F7B-FB3E-919A-194C5AF1BC0F" schemaObject="A7F0AA4B-48B8-A0A1-CC9A-5A88498E0A22" name="MEMORY_DB">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>GRUPOTH</sourceObjSchema>
+<sourceObjName>MEMORY_DB</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MEMORY" id="26D1023E-AEEB-CBF0-68FC-AE4E3B25A873">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>MEMORY_DB</sourceObjSchema>
+<sourceObjName>ID_MEMORY</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOTAL_RAM" id="1CD4D904-2DCB-6243-44B8-E115B8884847">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>MEMORY_DB</sourceObjSchema>
+<sourceObjName>TOTAL_RAM</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEMORY_USED" id="1BD18702-1B44-079D-FE44-55475F198163">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>MEMORY_DB</sourceObjSchema>
+<sourceObjName>MEMORY_USED</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RAM_USED" id="C28F687C-5019-FAF2-F84A-DEF642DA2ED4">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>MEMORY_DB</sourceObjSchema>
+<sourceObjName>RAM_USED</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FREE_RAM" id="488E2D01-B446-015E-61D1-84BC46744D1B">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>MEMORY_DB</sourceObjSchema>
+<sourceObjName>FREE_RAM</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPU_COUNT" id="6A1804DC-075F-9471-E0FD-27583CAA20E3">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>MEMORY_DB</sourceObjSchema>
+<sourceObjName>CPU_COUNT</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPU_SOCKET_COUNT" id="7D5EBD15-C98C-1F15-108C-3A3E911F29AC">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>MEMORY_DB</sourceObjSchema>
+<sourceObjName>CPU_SOCKET_COUNT</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPU_CORE_COUNT" id="D3FA8BE5-520A-9F30-02C2-6FDE11DE9A0E">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>MEMORY_DB</sourceObjSchema>
+<sourceObjName>CPU_CORE_COUNT</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATABASE_ID" id="541DE8CF-BAD0-22B3-4D20-9A4EE9331C58">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>MEMORY_DB</sourceObjSchema>
+<sourceObjName>DATABASE_ID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46564449-CF23-7120-0DF1-4F5269DB3A07" referredColumn="90051E7E-7AF2-D614-0B42-834267CC579D"/>
+</associations>
+</Column>
+<Column name="TIME_STAMP" id="1E91559F-D7DB-7B06-2A43-C17A3CF87FF2">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>MEMORY_DB</sourceObjSchema>
+<sourceObjName>TIME_STAMP</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E52D19C8-DBF4-E7C5-464A-81174C670711" name="MEMORY_PK">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>GRUPOTH</sourceObjSchema>
+<sourceObjName>MEMORY_PK</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26D1023E-AEEB-CBF0-68FC-AE4E3B25A873"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AF452D7A-BA4F-6780-96D1-2BDAE20EB65E" schemaObject="A7F0AA4B-48B8-A0A1-CC9A-5A88498E0A22" name="MEMORY_PK">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>GRUPOTH</sourceObjSchema>
+<sourceObjName>MEMORY_PK</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26D1023E-AEEB-CBF0-68FC-AE4E3B25A873"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="876974AF-9BD1-13D5-4E69-38B16962B134" name="MEMORY_FK">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="541DE8CF-BAD0-22B3-4D20-9A4EE9331C58"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

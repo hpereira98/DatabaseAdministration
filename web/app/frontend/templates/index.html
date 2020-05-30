@@ -1,0 +1,326 @@
+{% extends "base.html" %}
+    {% block content %}
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-7 align-self-center">
+                <h2 class="page-title text-truncate text-dark font-weight-medium mb-1">Database Overview</h2>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="card-group">
+                <div class="card border-right">
+                    <div class="card-body">
+                        <div class="d-flex d-lg-flex d-md-block align-items-center ">
+                            <div>
+                                <div class="d-inline-flex align-items-center">
+                                    <h3 class="text-dark mb-1 font-weight-medium ">Database Name: <h3>{{database[0]['database_name']}}</h3></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex d-lg-flex d-md-block align-items-center ">
+                            <div>
+                                <div class="d-inline-flex align-items-center">
+                                    <h3 class=" text-dark mb-1 font-weight-medium ">Version: <h3>{{database[0]['version']}}</h3></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex d-lg-flex d-md-block align-items-center ">
+                            <div>
+                                <div class="d-inline-flex align-items-center">
+                                    <h3 class=" text-dark mb-1 font-weight-medium ">Plataform Name: <h3>{{database[0]['platform_name']}}</h3></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex d-lg-flex d-md-block align-items-center ">
+                            <div>
+                                <div class="d-inline-flex align-items-center">
+                                    <h3 class=" text-dark mb-1 font-weight-medium ">Host Name: <h3>{{database[0]['host_name']}}</h3></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex d-lg-flex d-md-block align-items-center ">
+                            <div>
+                                <div class="d-inline-flex align-items-center">
+                                    <h3 class=" text-dark mb-1 font-weight-medium ">Up time: <h3>{{database[0]['up_time']}} minutes</h3></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card border-right">
+                    <div class="card-body">
+                        <div class="d-flex d-lg-flex d-md-block align-items-center">
+                            <div>
+                                <div class="d-inline-flex align-items-center">
+                                    <h2 class="text-dark mb-1 font-weight-medium">{{users[0]['total']}}</h2>
+                                </div>
+                                <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Users</h6>
+                            </div>
+                            <div class="ml-auto mt-md-3 mt-lg-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-right">
+                    <div class="card-body">
+                        <div class="d-flex d-lg-flex d-md-block align-items-center">
+                            <div>
+                                <div class="d-inline-flex align-items-center">
+                                    <h2 class="text-dark mb-1 font-weight-medium">{{tablespaces[0]['total']}}</h2>
+                                </div>
+                                <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Tablespaces</h6>
+                            </div>
+                            <div class="ml-auto mt-md-3 mt-lg-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        <div class="card border-right">
+                    <div class="card-body">
+                                <div class="d-flex d-lg-flex d-md-block align-items-center">
+                                    <div>
+                                        <div class="d-inline-flex align-items-center">
+                                            <h2 class="text-dark mb-1 font-weight-medium">{{datafiles[0]['total']}}</h2>
+                                        </div>
+                                        <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Datafiles</h6>
+                                    </div>
+                                    <div class="ml-auto mt-md-3 mt-lg-0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-right">
+                    <div class="card-body">
+                                <div class="d-flex d-lg-flex d-md-block align-items-center">
+                                    <div>
+                                        <div class="d-inline-flex align-items-center">
+                                            <h2 class="text-dark mb-1 font-weight-medium">{{sessions[0]['total']}}</h2>
+                                        </div>
+                                        <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Sessions</h6>
+                                    </div>
+                                    <div class="ml-auto mt-md-3 mt-lg-0">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <!-- Graphs -->
+                            <script src="{{ url_for('static', filename='js/Chart.min.js') }}"></script>
+                            <h1>Memory Stats</h1>
+                            <!-- bar chart canvas element -->
+                            <canvas id="myChart" width="500" height="300"></canvas>
+                                <p id="caption1">Chart showing Memory usage per time</p>
+                            <script>
+                                // Global parameters:
+                                // do not resize the chart canvas when its container does (keep at 600x400px)
+                               // Chart.defaults.global.responsive = false;
+
+                                // define the chart data
+                                var chartData = {
+                                    labels : [{% for item in ram_usage %}
+                                                "{{item['time']}}",
+                                             {% endfor %}],
+                                     datasets : [{
+                                            label: '{{ legend1 }}',
+                                            fill: false,
+                                            lineTension: 0.1,
+                                            backgroundColor: "rgba(142,94,162,0.4)",
+                                            borderColor: "rgba(142,94,162,1)",
+                                            borderCapStyle: 'butt',
+                                            borderDash: [],
+                                            borderDashOffset: 0.0,
+                                            borderJoinStyle: 'miter',
+                                            pointBorderColor: "rgba(142,94,162,1)",
+                                            pointBackgroundColor: "#fff",
+                                            pointBorderWidth: 1,
+                                            pointHoverRadius: 5,
+                                            pointHoverBackgroundColor: "rgba(142,94,162,1)",
+                                            pointHoverBorderColor: "rgba(220,220,220,1)",
+                                            pointHoverBorderWidth: 2,
+                                            pointRadius: 1,
+                                            pointHitRadius: 10,
+                                            data : [{% for item in ram_usage %}
+                                                    {{item['total_ram']}},
+                                                    {% endfor %}],
+                                            spanGaps: false
+                                     },
+                                     {
+                                            label: '{{ legend2 }}',
+                                            fill: false,
+                                            lineTension: 0.1,
+                                            backgroundColor: "rgba(62,149,205,0.4)",
+                                            borderColor: "rgba(62,149,205,1)",
+                                            borderCapStyle: 'butt',
+                                            borderDash: [],
+                                            borderDashOffset: 0.0,
+                                            borderJoinStyle: 'miter',
+                                            pointBorderColor: "rgba(62,149,205,1)",
+                                            pointBackgroundColor: "#fff",
+                                            pointBorderWidth: 1,
+                                            pointHoverRadius: 5,
+                                            pointHoverBackgroundColor: "rgba(62,149,205,1)",
+                                            pointHoverBorderColor: "rgba(220,220,220,1)",
+                                            pointHoverBorderWidth: 2,
+                                            pointRadius: 1,
+                                            pointHitRadius: 10,
+                                            data : [{% for item in ram_usage %}
+                                                    {{item['free_ram']}},
+                                                    {% endfor %}],
+                                            spanGaps: false
+                                     },
+                                     {
+                                            label: '{{ legend3 }}',
+                                            fill: false,
+                                            lineTension: 0.1,
+                                            backgroundColor: "rgba(60,186,159,0.4)",
+                                            borderColor: "rgba(60,186,159,1)",
+                                            borderCapStyle: 'butt',
+                                            borderDash: [],
+                                            borderDashOffset: 0.0,
+                                            borderJoinStyle: 'miter',
+                                            pointBorderColor: "rgba(60,186,159,1)",
+                                            pointBackgroundColor: "#fff",
+                                            pointBorderWidth: 1,
+                                            pointHoverRadius: 5,
+                                            pointHoverBackgroundColor: "rgba(60,186,159,1)",
+                                            pointHoverBorderColor: "rgba(220,220,220,1)",
+                                            pointHoverBorderWidth: 2,
+                                            pointRadius: 1,
+                                            pointHitRadius: 10,
+                                            data : [{% for item in ram_usage %}
+                                                    {{item['ram_used']}},
+                                                    {% endfor %}],
+                                            spanGaps: false
+                                     }
+                                     ]
+
+                                }
+
+                                  // get chart canvas
+                                  var ctx = document.getElementById("myChart").getContext("2d");
+
+                                  // create the chart using the chart canvas
+                                  var myChart = new Chart(ctx, {
+                                    type: 'line',
+                                    data: chartData,
+                                  });
+                             </script>
+                            <h1>  </h1>
+                        </div>
+                        <!-- CPU STATS-->
+                        <div class="col-lg-6 col-md-12">
+                            <h1>CPU Stats</h1>
+                            <canvas id="mixed-chart" width="800" height="450"></canvas>
+                               <p id="caption2">Chart showing CPU usage per time</p>
+                            <script>
+                                new Chart(document.getElementById("mixed-chart"), {
+                                type: 'bar',
+                                data: {
+                                  labels : [{% for item in cpu_usage %}
+                                                "{{item['time']}}",
+                                             {% endfor %}],
+                                  datasets: [{
+                                      label: "CPU Count",
+                                      type: "bar",
+                                      borderColor: "rgbargba(60,186,159,1)",
+                                      backgroundColor: "rgba(60,186,159,1)",
+                                      data: [{% for item in cpu_usage %}
+                                                    {{item['cpu_count']}},
+                                                    {% endfor %}],
+                                      fill: true
+                                    }, {
+                                      label: "CPU Core Count",
+                                      type: "bar",
+                                      borderColor: "rgba(12,132,237,1)",
+                                      backgroundColor: "rgba(12,132,237,1)",
+                                      data: [{% for item in cpu_usage %}
+                                                    {{item['cpu_core_count']}},
+                                                    {% endfor %}],
+                                      fill: true
+                                    },
+                                    {
+                                      label: "CPU Socket Count",
+                                      type: "bar",
+                                      borderColor: "rgba(142,94,162,1)",
+                                      backgroundColor: "rgba(142,94,162,1)",
+                                      data: [{% for item in cpu_usage %}
+                                                    {{item['cpu_socket_count']}},
+                                                    {% endfor %}],
+                                      fill: true
+                                    }
+                                  ]
+                                },
+                                options: {
+                                  title: {
+                                    display: false,
+                                    text: 'Population growth (millions): Europe & Africa'
+                                  },
+                                  legend: { display: true }
+                                }
+                            });
+                             </script>
+                        </div>
+                    </div>
+            <div class = "row">
+                <div class="col-lg-6 col-md-12">
+                            <h1>Session Stats</h1>
+                            <canvas id="doughnut-chart" width="800" height="450"></canvas>
+                            <script>
+                                new Chart(document.getElementById("doughnut-chart"), {
+                                type: 'doughnut',
+                                data: {
+                                  labels: ["Inactive Sessions", "Active Sessions"],
+                                  datasets: [
+                                    {
+                                      label: "Sessions",
+                                      backgroundColor: ["#3e95cd", "#8e5ea2"],
+                                      data:  [{{inactive[0]['total']}},{{active[0]['total']}}]
+                                    }
+                                  ]
+                                },
+                                options: {
+                                  title: {
+                                    display: true,
+                                    text: 'Sessions Status'
+                                  }
+                                }
+                            });
+                            </script>
+                        </div>
+                <div class="col-lg-6 col-md-12">
+                            <h1>Tablespaces Stats</h1>
+                            <canvas id="doughnut-chart2" width="800" height="450"></canvas>
+                            <script>
+                                new Chart(document.getElementById("doughnut-chart2"), {
+                                type: 'doughnut',
+                                data: {
+                                  labels: ["Temporary Tables", "Undo Tables", "Permanent Tables"],
+                                  datasets: [
+                                    {
+                                      label: "",
+                                      backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f"],
+                                      data:  [{{tempTables[0]['total']}},{{undoTables[0]['total']}}, {{permTables[0]['total']}} ]
+                                    }
+                                  ]
+                                },
+                                options: {
+                                  title: {
+                                    display: true,
+                                    text: 'Tablespaces Types'
+                                  }
+                                }
+                            });
+                            </script>
+                        </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

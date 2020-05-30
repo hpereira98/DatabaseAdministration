@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BDA571D4-52DD-6DF0-2077-F0913A7E2B90" containerWithKeyObject="B41588F0-FEC2-72AD-5AF0-2A7B37D92FB6" localFKIndex="A0C0D4B7-DEF9-2F52-4EC2-BCE3D0424AE9" name="SESSION_FK">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>GRUPOTH</sourceObjSchema>
+<sourceObjName>SESSION_FK</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<referredTableLongName>GRUPOTH.DATABASE_DB</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>B4660EB8-99C8-26B3-3662-13CF2519D9D8</referredTableID>
+<keyObject>1261056F-306D-B32B-2AA4-5D98BB1F3693</keyObject>
+<referredKeyID>1261056F-306D-B32B-2AA4-5D98BB1F3693</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_DATABASE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

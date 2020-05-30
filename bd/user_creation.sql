@@ -6,3 +6,6 @@ account unlock;
 
 grant resource to grupoth;
 grant connect to grupoth;
+grant create any view to grupoth;
+
+

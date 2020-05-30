@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C305650-4D6E-4F3A-CF6B-BBAD64BF1DDA" schemaObject="A7F0AA4B-48B8-A0A1-CC9A-5A88498E0A22" name="DATAFILE_DB">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>GRUPOTH</sourceObjSchema>
+<sourceObjName>DATAFILE_DB</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DATAFILE" id="F13E5352-20D1-8071-CADF-AC5974764C67">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>DATAFILE_DB</sourceObjSchema>
+<sourceObjName>ID_DATAFILE</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATAFILE_NAME" id="5BE5C8E5-44B2-D9BB-DA6F-507D78855725">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>DATAFILE_DB</sourceObjSchema>
+<sourceObjName>DATAFILE_NAME</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTOEXTENSIBLE" id="D4B74F4A-3BFD-E60B-6577-12BFC99CEFC0">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>DATAFILE_DB</sourceObjSchema>
+<sourceObjName>AUTOEXTENSIBLE</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USED_SPACE" id="A0A46854-F678-98A4-BD76-C7EF8ABF1410">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>DATAFILE_DB</sourceObjSchema>
+<sourceObjName>USED_SPACE</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_SIZE" id="09CE275C-6E75-C1AA-B308-A09E2B108541">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>DATAFILE_DB</sourceObjSchema>
+<sourceObjName>MAX_SIZE</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="45380A02-4FFD-D4FC-377A-3C8F2C3DD824">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>DATAFILE_DB</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TABLESPACE_ID" id="C13CC005-0331-4260-F467-FA68AB097D62">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>DATAFILE_DB</sourceObjSchema>
+<sourceObjName>TABLESPACE_ID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E6DA06B-5D25-A9D6-CCC6-487963A4A268" referredColumn="13E3198D-5CAA-CABC-8103-813DB5990B6F"/>
+</associations>
+</Column>
+<Column name="TIME_STAMP" id="7C66E940-B634-C2F5-470C-9F03B8B5D93A">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>DATAFILE_DB</sourceObjSchema>
+<sourceObjName>TIME_STAMP</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3E69C443-5757-D174-D6B6-D82E334C83FB" name="DATA_FILE_PK">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>GRUPOTH</sourceObjSchema>
+<sourceObjName>DATA_FILE_PK</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F13E5352-20D1-8071-CADF-AC5974764C67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF6F0ED7-67B2-DE50-B503-9D94161A5B5D" schemaObject="A7F0AA4B-48B8-A0A1-CC9A-5A88498E0A22" name="DATA_FILE_PK">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>GRUPOTH</sourceObjSchema>
+<sourceObjName>DATA_FILE_PK</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F13E5352-20D1-8071-CADF-AC5974764C67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C37DA67-457B-AB26-A624-E44D250BC99B" name="DATA_FILE_FK">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C13CC005-0331-4260-F467-FA68AB097D62"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

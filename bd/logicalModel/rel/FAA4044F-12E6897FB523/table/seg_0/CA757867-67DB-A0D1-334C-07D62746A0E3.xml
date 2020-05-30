@@ -1,0 +1,191 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA757867-67DB-A0D1-334C-07D62746A0E3" schemaObject="A7F0AA4B-48B8-A0A1-CC9A-5A88498E0A22" name="TABLESPACE_DB">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>GRUPOTH</sourceObjSchema>
+<sourceObjName>TABLESPACE_DB</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TABLESPACE" id="13E3198D-5CAA-CABC-8103-813DB5990B6F">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>TABLESPACE_DB</sourceObjSchema>
+<sourceObjName>ID_TABLESPACE</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TABLESPACE_NAME" id="04C6FA60-DE7B-BEBB-EAEA-E806FE45707E">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>TABLESPACE_DB</sourceObjSchema>
+<sourceObjName>TABLESPACE_NAME</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="5FE497C3-63CC-A522-0291-2409A2E9B4EB">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>TABLESPACE_DB</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_SIZE" id="D98AC33C-7164-739C-60A9-1CFBB979B642">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>TABLESPACE_DB</sourceObjSchema>
+<sourceObjName>MAX_SIZE</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USED_SPACE" id="D6DED64D-1AD4-9E67-67D7-CF6B529BA54F">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>TABLESPACE_DB</sourceObjSchema>
+<sourceObjName>USED_SPACE</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPACE_ALLOCATED" id="0C5DD397-17DB-6F4F-3918-38BBBC2276A7">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>TABLESPACE_DB</sourceObjSchema>
+<sourceObjName>SPACE_ALLOCATED</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FREE_SPACE" id="23ACAB3A-0D61-769C-17E7-14AA2F1ED798">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>TABLESPACE_DB</sourceObjSchema>
+<sourceObjName>FREE_SPACE</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TABLESPACE_TYPE" id="3DEE9D24-FE2E-AB0A-941A-4F9D99F6BB68">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>TABLESPACE_DB</sourceObjSchema>
+<sourceObjName>TABLESPACE_TYPE</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATABASE_ID" id="FBA9D9B4-0B14-68F5-3142-DEC5C2D3AC62">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>TABLESPACE_DB</sourceObjSchema>
+<sourceObjName>DATABASE_ID</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A037FB14-FB9C-CBB0-D483-582CFDA4395C" referredColumn="90051E7E-7AF2-D614-0B42-834267CC579D"/>
+</associations>
+</Column>
+<Column name="TIME_STAMP" id="179C9F31-432C-D181-F28A-9A9F6CB06644">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>TABLESPACE_DB</sourceObjSchema>
+<sourceObjName>TIME_STAMP</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C6D2A784-2848-B376-BA0A-CC7D3B20F8FF" name="TABLESPACE_PK">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>GRUPOTH</sourceObjSchema>
+<sourceObjName>TABLESPACE_PK</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13E3198D-5CAA-CABC-8103-813DB5990B6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5B1033D-864C-2279-4877-7D2314066521" schemaObject="A7F0AA4B-48B8-A0A1-CC9A-5A88498E0A22" name="TABLESPACE_PK">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>GRUPOTH</sourceObjSchema>
+<sourceObjName>TABLESPACE_PK</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13E3198D-5CAA-CABC-8103-813DB5990B6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F93D2552-2859-D5C7-9527-3A40ABA374F3" name="TABLESPACE_FK1">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FBA9D9B4-0B14-68F5-3142-DEC5C2D3AC62"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

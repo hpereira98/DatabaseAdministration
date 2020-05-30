@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TABLESPACEID_TRIGGER" directorySegmentName="seg_0" id="5D12E4C6-7B83-0104-F486-72464E0EF235">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>GRUPOTH</sourceObjSchema>
+<sourceObjName>TABLESPACEID_TRIGGER</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[begin
+    select tablespace_id.nextval
+    into :new.id_tablespace
+    from dual;
+end tablespaceId_trigger;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>A2397190-B93F-0B8B-C968-2166F686A096</owner>
+<table>CA757867-67DB-A0D1-334C-07D62746A0E3</table>
+</TriggerOraclev10g>

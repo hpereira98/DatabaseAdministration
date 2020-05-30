@@ -1,3 +1,7 @@
+-- SESSION
+-- PDB
+select * from v$session;
+
 -- PDB
 select * from v$database;
 -- PDB
@@ -5,6 +9,7 @@ select * from v$instance;
 
 select instance_name from v$instance;
 
+-- CDB
 select * from dba_cpu_usage_statistics;
 
 -- TABLESPACES
@@ -56,7 +61,6 @@ select * from dba_data_files;
 
 
 -- USER
-select * from dba_users;
 
 select * from v$sga;
 select sum(value) from v$sga;

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="DATABASE_DB" directorySegmentName="seg_0" id="B4660EB8-99C8-26B3-3662-13CF2519D9D8">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<schemaObject>A7F0AA4B-48B8-A0A1-CC9A-5A88498E0A22</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>02F7ABC5-133E-D3E6-3AF8-1364538AFB43</segment>
+<tableSpace>C4E4AF9E-E113-0023-31CA-2BECCDC4B5D0</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TIME_STAMP" id="01CB5C52-7B12-E332-8979-4BF09415BD1D">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PLATFORM_NAME" id="086A26B2-CB7D-0B29-1999-C6005551B005">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UP_TIME" id="10B793BB-CE30-D5BF-FA9D-AF28F97B498A">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VERSION" id="13F36B13-C72C-FF7E-E965-BBD21CB0F92F">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HOST_NAME" id="5756F9DA-639E-7913-47EB-A42DBD1142E3">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATABASE_NAME" id="7B273E19-82B9-1052-F646-7ABB9D3B7EAF">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_DATABASE" id="90051E7E-7AF2-D614-0B42-834267CC579D">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DATABASE_PK" id="8D1F09CE-10F2-2911-2CF5-F62E57236FF4">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<schemaObject>A7F0AA4B-48B8-A0A1-CC9A-5A88498E0A22</schemaObject>
+<segment>DED73831-4AE3-A112-9237-04E983481BD9</segment>
+<tableSpace>C4E4AF9E-E113-0023-31CA-2BECCDC4B5D0</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DATABASE_PK" id="1261056F-306D-B32B-2AA4-5D98BB1F3693">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<segment>DED73831-4AE3-A112-9237-04E983481BD9</segment>
+<tableSpace>C4E4AF9E-E113-0023-31CA-2BECCDC4B5D0</tableSpace>
+<existingIndex>8D1F09CE-10F2-2911-2CF5-F62E57236FF4</existingIndex>
+<indexSegment>DED73831-4AE3-A112-9237-04E983481BD9</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

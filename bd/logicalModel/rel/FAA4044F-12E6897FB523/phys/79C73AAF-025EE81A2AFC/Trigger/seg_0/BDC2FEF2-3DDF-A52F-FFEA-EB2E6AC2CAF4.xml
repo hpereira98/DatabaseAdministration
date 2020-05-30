@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="DATAFILEID_TRIGGER" directorySegmentName="seg_0" id="BDC2FEF2-3DDF-A52F-FFEA-EB2E6AC2CAF4">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>GRUPOTH</sourceObjSchema>
+<sourceObjName>DATAFILEID_TRIGGER</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[begin
+    select datafile_id.nextval
+    into :new.id_datafile
+    from dual;
+end datafileId_trigger;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>A2397190-B93F-0B8B-C968-2166F686A096</owner>
+<table>3C305650-4D6E-4F3A-CF6B-BBAD64BF1DDA</table>
+</TriggerOraclev10g>

@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="GRUPOTH" directorySegmentName="seg_0" id="A2397190-B93F-0B8B-C968-2166F686A096">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjName>GRUPOTH</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<schemaObject>A7F0AA4B-48B8-A0A1-CC9A-5A88498E0A22</schemaObject>
+</UserOraclev10g>

@@ -7,6 +7,10 @@ select instance_name from v$instance;
 
 select * from dba_cpu_usage_statistics;
 
+-- SESSION
+-- PDB
+select username, status, type, logon_time, schemaname from v$session;
+
 -- TABLESPACES
 select * from dba_tablespaces
 order by tablespace_name ASC;
@@ -14,6 +18,8 @@ order by tablespace_name ASC;
 select * from V$temp_space_header;
 
 select round(bytes_free/1024/1024,2) from V$temp_space_header;
+
+select * from V$temp_space_header;
 
 select * from dba_free_space;
 
@@ -54,6 +60,7 @@ select * from v$sga;
 select sum(value) from v$sga;
 
 select * from v$session;
+
 
 select * from v$sgastat
 where name = 't';

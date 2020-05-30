@@ -1,55 +1,67 @@
-create sequence status_id start with 1;
+create sequence memory_id start with 1;
 create sequence database_id start with 1;
+create sequence tablespace_id start with 1;
 create sequence datafile_id start with 1;
 create sequence user_id start with 1;
-create sequence tablespace_id start with 1;
+create sequence session_id start with 1;
 
--- STATUS_ID
-create or replace trigger status_id_trigger
-before insert on status
+
+-- MEMORY_ID
+create or replace trigger memoryId_trigger
+before insert on memory_db
 for each row
 begin
-    select status_id.nextval
-    into :new.id_status
+    select memory_id.nextval
+    into :new.id_memory
     from dual;
-end status_id_trigger;
+end memoryId_trigger;
 
 -- DATABASE_ID
-create or replace trigger data_base_id_trigger
-before insert on data_base
+create or replace trigger databaseId_trigger
+before insert on database_db
 for each row
 begin
     select database_id.nextval
     into :new.id_database
     from dual;
-end data_base_id_trigger;
+end databaseId_trigger;
 
 -- DATAFILE_ID
-create or replace trigger data_file_id_trigger
-before insert on data_file
+create or replace trigger datafileId_trigger
+before insert on datafile_db
 for each row
 begin
     select datafile_id.nextval
     into :new.id_datafile
     from dual;
-end data_file_id_trigger;
+end datafileId_trigger;
 
 -- USER ID
-create or replace trigger user_id_trigger
+create or replace trigger userId_trigger
 before insert on user_db
 for each row
 begin
     select user_id.nextval
-    into :new.id_useruser_id_trigger
+    into :new.id_user
     from dual;
-end user_id_trigger;
+end userId_trigger;
 
--- TABLESPACE
-create or replace trigger tablespace_id_trigger
-before insert on tablespace_bd
+-- SESSION_ID
+create or replace trigger session_trigger
+before insert on session_db
+for each row
+begin
+    select session_id.nextval
+    into :new.id_session
+    from dual;
+end session_trigger;
+
+-- TABLESPACE_ID
+create or replace trigger tablespaceId_trigger
+before insert on tablespace_db
 for each row
 begin
     select tablespace_id.nextval
     into :new.id_tablespace
     from dual;
-end tablespace_id_trigger;
+end tablespaceId_trigger;

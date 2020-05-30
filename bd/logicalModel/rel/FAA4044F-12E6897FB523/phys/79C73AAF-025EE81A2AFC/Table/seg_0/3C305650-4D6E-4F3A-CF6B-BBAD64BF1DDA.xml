@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="DATAFILE_DB" directorySegmentName="seg_0" id="3C305650-4D6E-4F3A-CF6B-BBAD64BF1DDA">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<schemaObject>A7F0AA4B-48B8-A0A1-CC9A-5A88498E0A22</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>02F7ABC5-133E-D3E6-3AF8-1364538AFB43</segment>
+<tableSpace>C4E4AF9E-E113-0023-31CA-2BECCDC4B5D0</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MAX_SIZE" id="09CE275C-6E75-C1AA-B308-A09E2B108541">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STATUS" id="45380A02-4FFD-D4FC-377A-3C8F2C3DD824">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATAFILE_NAME" id="5BE5C8E5-44B2-D9BB-DA6F-507D78855725">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIME_STAMP" id="7C66E940-B634-C2F5-470C-9F03B8B5D93A">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USED_SPACE" id="A0A46854-F678-98A4-BD76-C7EF8ABF1410">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TABLESPACE_ID" id="C13CC005-0331-4260-F467-FA68AB097D62">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AUTOEXTENSIBLE" id="D4B74F4A-3BFD-E60B-6577-12BFC99CEFC0">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_DATAFILE" id="F13E5352-20D1-8071-CADF-AC5974764C67">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DATA_FILE_PK" id="BF6F0ED7-67B2-DE50-B503-9D94161A5B5D">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<schemaObject>A7F0AA4B-48B8-A0A1-CC9A-5A88498E0A22</schemaObject>
+<segment>DED73831-4AE3-A112-9237-04E983481BD9</segment>
+<tableSpace>C4E4AF9E-E113-0023-31CA-2BECCDC4B5D0</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DATA_FILE_FK" id="8C37DA67-457B-AB26-A624-E44D250BC99B">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DATA_FILE_PK" id="3E69C443-5757-D174-D6B6-D82E334C83FB">
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<segment>DED73831-4AE3-A112-9237-04E983481BD9</segment>
+<tableSpace>C4E4AF9E-E113-0023-31CA-2BECCDC4B5D0</tableSpace>
+<existingIndex>BF6F0ED7-67B2-DE50-B503-9D94161A5B5D</existingIndex>
+<indexSegment>DED73831-4AE3-A112-9237-04E983481BD9</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

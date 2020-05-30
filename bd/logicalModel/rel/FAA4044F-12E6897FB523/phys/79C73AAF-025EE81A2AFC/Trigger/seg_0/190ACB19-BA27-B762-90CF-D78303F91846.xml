@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="USERID_TRIGGER" directorySegmentName="seg_0" id="190ACB19-BA27-B762-90CF-D78303F91846">
+<sourceConnName>grupoth.orcl</sourceConnName>
+<sourceObjSchema>GRUPOTH</sourceObjSchema>
+<sourceObjName>USERID_TRIGGER</sourceObjName>
+<createdBy>HP</createdBy>
+<createdTime>2020-05-25 12:52:45 UTC</createdTime>
+<ownerDesignName>logicalModel</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[begin
+    select user_id.nextval
+    into :new.id_user
+    from dual;
+end userId_trigger;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>A2397190-B93F-0B8B-C968-2166F686A096</owner>
+<table>B86C1A81-F66E-4FDB-9E0C-17752CBC3918</table>
+</TriggerOraclev10g>
